@@ -4,7 +4,7 @@ services:
     image: postgres:16-alpine
     container_name: flay_away
     ports:
-      - "5436:5436"
+      - "5436:5432"
     environment:
       POSTGRES_DB: flay_away
       POSTGRES_USER: postgres
