@@ -1,4 +1,4 @@
-package com.example.p_flayawaytravel.service;
+package com.example.p_flayawaytravel.services;
 
 import com.example.p_flayawaytravel.domain.User;
 import com.example.p_flayawaytravel.dto.RequestUserDTO;

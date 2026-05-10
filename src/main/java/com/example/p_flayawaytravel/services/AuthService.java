@@ -1,8 +1,9 @@
-package com.example.p_flayawaytravel.service;
+package com.example.p_flayawaytravel.services;
 
 import com.example.p_flayawaytravel.dto.RequestLoginDTO;
 import com.example.p_flayawaytravel.dto.ResponseLoginDTO;
 import com.example.p_flayawaytravel.repository.UserRepository;
+import com.example.p_flayawaytravel.security.JwtService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
