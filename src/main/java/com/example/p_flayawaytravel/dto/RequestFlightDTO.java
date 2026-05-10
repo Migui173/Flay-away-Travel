@@ -2,7 +2,7 @@ package com.example.p_flayawaytravel.dto;
 import jakarta.validation.constraints.*;
 import lombok.*;
 
-import java.util.Date;
+import java.time.*;
 
 @Getter
 @Setter
@@ -18,14 +18,14 @@ public class RequestFlightDTO {
 
     @NotNull
     @NotEmpty
-    private Date estDEpartureTime;
+    private LocalDateTime estDepartureTime;
 
     @NotNull
     @NotEmpty
-    private Date estArrivalTime;
+    private LocalDateTime estArrivalTime;;
 
     @NotNull
     @NotEmpty
     @Min(1)
-    private Integer availableStats;
+    private Integer availableSeats;
 }

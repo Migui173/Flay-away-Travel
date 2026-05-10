@@ -1,10 +1,11 @@
 package com.example.p_flayawaytravel.dto;
+
 import jakarta.validation.constraints.*;
 import lombok.*;
-import org.hibernate.validator.constraints.Length;
 
 @Getter
 @Setter
-public class ResponseUserDTO {
-    private Long id;
+public class RequestBookingDTO {
+    @NotNull
+    private Long flightId;
 }
