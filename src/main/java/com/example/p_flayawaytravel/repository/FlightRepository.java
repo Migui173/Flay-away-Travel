@@ -13,9 +13,9 @@ public interface FlightRepository extends JpaRepository<Flight, Long> {
 
     List<Flight> findByFlightNumberContainingIgnoreCase(String flightNumber);
 
-    List<Flight> findByaAirlineNumberContainingIgnoreCase(String airlineName);
+    List<Flight> findByAirlineNameContainingIgnoreCase(String airlineName);
 
-    List<Flight> findVyEstDepartureTimeBetween(LocalDateTime start, LocalDateTime end);
+    List<Flight> findByEstDepartureTimeBetween(LocalDateTime start, LocalDateTime end);
 
     Optional<Flight> findByFlightNumber(String flightNumber);
 }
