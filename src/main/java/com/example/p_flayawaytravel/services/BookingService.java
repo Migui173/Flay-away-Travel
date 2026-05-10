@@ -82,16 +82,16 @@ public class BookingService {
     private void saveConfirmationFile(Booking booking) {
         String filename = "flight_booking_email_" + booking.getId() + ".txt";
         try (FileWriter writer = new FileWriter(filename)) {
-            writer.write("=== Booking Confirmation ===\n");
-            writer.write("Booking ID: " + booking.getId() + "\n");
-            writer.write("Passenger: " + booking.getUser().getFirstName()
+            writer.write("=== Confirmacion del Booking ===\n");
+            writer.write("ID Booking: " + booking.getId() + "\n");
+            writer.write("Pasajero: " + booking.getUser().getFirstName()
                     + " " + booking.getUser().getLastName() + "\n");
-            writer.write("Flight Number: " + booking.getFlight().getFlightNumber() + "\n");
+            writer.write("Flight N°: " + booking.getFlight().getFlightNumber() + "\n");
             writer.write("Departure: " + booking.getFlight().getEstDepartureTime() + "\n");
             writer.write("Arrival: " + booking.getFlight().getEstArrivalTime() + "\n");
-            writer.write("Booking Date: " + booking.getBookingDate() + "\n");
+            writer.write("Dia del Booking: " + booking.getBookingDate() + "\n");
         } catch (IOException e) {
-            System.err.println("Could not save confirmation file: " + e.getMessage());
+            System.err.println("No se guardo el archivo: " + e.getMessage());
         }
     }
 }
